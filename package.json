@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Complete Login page",
+  "main": "index.js",
+  "scripts": {
+    "test": "check",
+    "start" : "nodemon src/app.js -e js,hbs"
+  },
+  "keywords": [
+    "Login"
+  ],
+  "author": "Vijay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22"
+  }
+}

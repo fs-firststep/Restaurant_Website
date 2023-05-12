@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifse;
+}
+
+/* --------------------------------------- Contact Form ----------------------------------------  */
+.contact{
+    /* border: 4px solid black; */
+
+    background: url("../image/contact-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 95vh;
+    position: relative;
+}
+
+.form{
+    width: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50% , -50%);
+
+    background: #0e0d0db8;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.form h1{
+    font-size: 2.2rem ;
+    padding-bottom: 30px ;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form .inputbox{
+    position: relative;
+}
+
+.form .inputbox input{
+    color: #fff;
+    font-size: 1.6rem;
+
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+}
+
+.form .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 1.6rem;
+    color: #fff;
+
+    transition: 0.5s;
+}
+
+.form .inputbox input:focus ~ label ,
+.form .inputbox input:valid ~ label{
+    font-size: 1.2rem;
+    color: rgb(25, 25, 238);
+
+    top: -20px;
+    left: 0;
+}
+
+
+
+.btn{
+    color: #fff;
+    background: rgb(63, 13, 145);
+    border-radius: 5px;
+    font-size: 1.6rem ;
+    padding: 8px 16px;
+
+    border: none;
+    outline: none;
+}

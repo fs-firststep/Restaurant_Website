@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/style2.css"> 
+    <title>Document</title>
+</head>
+<body>
+   {{!-- Navbar  --}}
+    {{> navbar }}
+
+    <section class="contact">
+
+        <div class="form">
+        
+           <h1>Login </h1>
+           <form action="/login" method="POST">
+              <div class="inputbox" >
+                <input type="email" id="email" name="email" autocomplete="off" required>
+                <label for="email">Email</label>                
+              </div>
+              <div class="inputbox" >
+                <input type="password" id="password" name="password" autocomplete="off" required>
+                <label for="password">Password</label>                
+              </div>
+             
+             <input type="submit" value="login" class="btn">
+             
+            </form>
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+</body>
+</html>

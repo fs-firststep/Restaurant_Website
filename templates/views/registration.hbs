@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Document form</title>
+</head>
+<body>
+   {{!-- Navbar  --}}
+    {{> navbar }}
+
+   <section class="contact">
+       <div class="contact-form">
+
+          <form action="/registration" method="POST">
+             <h1 class="lg-heading">Register</h1>
+
+             <div class="inputbox">
+                <i class="fas fa-3x fa-user logo"></i>
+                <input type="text" id="username" name="username" autocomplete="off" required>
+                <label for="username">Username</label>     
+             </div>
+             
+             <div class="inputbox">
+                <i class="fas fa-3x fa-envelope-square logo"></i>
+                <input type="emai" id="email" name="email" autocomplete="off" required>
+                <label for="email">Email</label>     
+             </div>
+
+             <div class="inputbox">
+                <i class="fas fa-3x fa-lock logo"></i>
+                <input type="password" id="password" name="password" autocomplete="off" required>
+                <label for="password">Password</label>  
+             </div>
+
+
+             <div class="gender" >
+               <i class="fas fa-3x fa-venus-mars logo"></i>
+                <p >Gender</p>
+
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="male" value="male">                 
+                   <label class="gen" for="male">Male</label>
+                </div>
+                
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="female" value="female">  
+                  <label class="gen" for="female">Female</label>
+                </div>
+               
+                <div class="radio-section">
+                   <input type="radio" name="gender" id="other" value="other">  
+                  <label class="gen" for="other">Other</label>
+                </div>
+               
+             </div>
+
+
+             <div class="dropdown">
+               <i class="fas fa-3x fa-globe logo"></i>
+                <label for="country">Country</label>
+                <select name="country" id="country" name="country">
+                  <option value="india">India</option>
+                  <option value="usa">USA</option>
+                  <option value="japan">Japan</option>
+                  <option value="russia">Russia</option>
+                  <option value="south korea">South Korea</option>
+                  <option value="other">Other</option>
+                </select>
+                  
+             </div><br><br>
+
+             <input type="submit" class="btn" value="submit">
+          </form>
+
+       </div>
+   </section>
+
+
+
+</body>
+</html>
